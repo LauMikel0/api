@@ -37,6 +37,7 @@ socket.on("cliente:editarDato", editarDato => {
         if (nota.id === editarDato.id) {
             nota.titulo = editarDato.titulo;
             nota.email = editarDato.email;
+            nota.programa = editarDato.programa;
         }
         return nota;
     });

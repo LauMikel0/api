@@ -6,16 +6,17 @@ const notaUI = (nota) => {
 const div = document.createElement("div");
 
     div.innerHTML = `
-    <div class="card card-body rounded-0 animate__animated animate__fadeInUp mb-2">
-       <div dforiv class="d-flex justify-content-between">
-         <h1>${nota.titulo}</h1>
-           <div>
-               <button class="btn btn-danger eliminar" data-id="${nota.id}">Eliminar</button>
-               <button class="btn btn-secondary editar" data-id="${nota.id}">Editar</button>
-           </div>
-       </div>
-           <p>${nota.email}</p>
-    </div>
+    <table class="container">
+    <tbody>
+		<tr>
+			<th>${nota.titulo}</th>
+            <th>${nota.email}></th>
+            <th>${nota.programa}</th>
+            <td button class="td eliminar" data-id="${nota.id}">Eliminar</td>
+			<td button class="td editar" data-id="${nota.id}">Editar</td>
+		</tr>
+        </tbody>
+    </table>
     `;
 
     const btnEliminar = div.querySelector(".eliminar");

@@ -18,7 +18,7 @@
     <title>Formulario</title>
 </head>
 <body>
-
+<div>
             <form id="formularioDatos" >
               <h1 class="h3 mb-5">Completa los datos</h1>
 
@@ -32,10 +32,18 @@
                 <input id="email" name="email" placeholder="email"/>
               </fieldset>
 
+              <fieldset>
+                <label>Programa académico</label>
+                <input id="programa" name="programa" placeholder="Programa académico"/>
+              </fieldset>
+            
               <button class="boton">Enviar</button>
-            </form>
-          <div  id="notas">
+            </div>
+          </form>
+   <div>
+       <div  id="notas">
       </div>
+    </div>
 
 
     <script src="./socket.io/socket.io.min.js"></script>
