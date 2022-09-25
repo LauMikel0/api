@@ -1,6 +1,6 @@
 AUTORES
 
-Laura Gonzalez / Jose Truyoth
+Laura Gonzalez
 
 
 
